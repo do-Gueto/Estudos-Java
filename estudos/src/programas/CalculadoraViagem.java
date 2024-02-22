@@ -17,6 +17,6 @@ public class CalculadoraViagem {
 			valor = dist * 0.45;
 		}
 		JOptionPane.showMessageDialog(null, "Você está prestes a iniciar uma viagem de " + dist + "Km.\n"
-				                          + "Valor a ser cobrado: R$ " + String.format("%.2f", valor));
+				                          + "Valor a ser cobrado: R$ " + String.format("%.2f", valor) + ".");
 	}
 }
