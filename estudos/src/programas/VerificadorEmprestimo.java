@@ -1,4 +1,4 @@
-/*Programa que verifica a disponibilidade de um empréstimo baseado no valor da casa,
+/*Programa que verifica a disponibilidade de um empréstimo baseado no valor do empréstimo,
   a quantidade de prestações e quanto a pessoa ganha.*/
 
 package programas;
