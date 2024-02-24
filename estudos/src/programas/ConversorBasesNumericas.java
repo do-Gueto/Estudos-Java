@@ -1,3 +1,6 @@
+/*Programa que faz a conversão de qualquer número inteiro de escolha do usuário para binário, octal ou hexadecimal
+ * conforme a vontade do usuário. O programa só é finalizado quando o usuário decidir e não é possível digitar 
+ * outra opção além das 3 disponívels */
 package programas;
 
 import javax.swing.JOptionPane;
@@ -7,7 +10,6 @@ public class ConversorBasesNumericas {
 	public static void main(String[] args) {
 		boolean continuar = true;
 		while (continuar) {
-
 			String sn = JOptionPane.showInputDialog("Digite um número inteiro:");
 			int n = Integer.parseInt(sn);
 			String sEscolha;
@@ -16,6 +18,8 @@ public class ConversorBasesNumericas {
 						+ "\n[1] para binário" + "\n[2] para octal" + "\n[3] para hexadecimal");
 				if (sEscolha.equals("1") | sEscolha.equals("2") | sEscolha.equals("3")) {
 					break;
+				}else {
+					JOptionPane.showMessageDialog(null, "Opção inválida! Tente novamente.");
 				}
 			}
 
@@ -45,7 +49,6 @@ public class ConversorBasesNumericas {
 				continuar = false;
 				break;
 			}
-
 		}
 		JOptionPane.showMessageDialog(null, "Programa finalizado.");
 	}
