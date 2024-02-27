@@ -1,3 +1,4 @@
+/*Programa que classifica a categoria de um atleta baseada na data de nascimento informada pelo usuário.*/
 package programas;
 
 import java.time.YearMonth;
@@ -7,6 +8,7 @@ import javax.swing.JOptionPane;
 public class ClassificacaoEsportiva {
 
 	public static void main(String[] args) {
+		
 		String sanoN = JOptionPane.showInputDialog("Digite o ano de nascimento do atleta:");
 		int anoN = Integer.parseInt(sanoN);
 		int ano = YearMonth.now().getYear();
